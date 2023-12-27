@@ -10,7 +10,8 @@ import {
 } from '@tabler/icons-react'
 import classes from './Welcome.module.css'
 import { IconChartBar } from '@tabler/icons-react'
-import { HowItWorks } from './HowItWorks'
+import { HowItWorks } from '../components/HowItWorks'
+
 
 export const MOCKDATA = [
   {
