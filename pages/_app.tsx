@@ -1,7 +1,10 @@
 import "@mantine/core/styles.css";
 import Head from "next/head";
-import { MantineProvider } from "@mantine/core";
+import { AppShell, Group, MantineProvider } from "@mantine/core";
 import { theme } from "../theme";
+import { IconLetterC, IconLetterH, IconLetterA, IconLetterR, IconLetterD, IconLetterY } from "@tabler/icons-react";
+import classes from './app.module.css'
+
 
 export default function App({ Component, pageProps }: any) {
   return (
@@ -14,7 +17,24 @@ export default function App({ Component, pageProps }: any) {
         />
         <link rel="shortcut icon" href="/favicon.svg" />
       </Head>
-      <Component {...pageProps} />
+
+      <AppShell header={{ height: 60 }} padding="md">
+        <AppShell.Header className={classes.background}>
+          <Group h="100%" px="md" justify={'center'}>
+            <IconLetterC />
+            <IconLetterH />
+            <IconLetterA />
+            <IconLetterR />
+            <IconLetterA />
+            <IconLetterD />
+            <IconLetterA />
+            <IconLetterY />
+          </Group>
+        </AppShell.Header>
+        <AppShell.Main>
+          <Component {...pageProps} />
+        </AppShell.Main>
+      </AppShell>
     </MantineProvider>
   );
 }
