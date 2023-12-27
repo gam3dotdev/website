@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Container, Title, Accordion } from '@mantine/core'
 import classes from './HowItWorks.module.css'
 
