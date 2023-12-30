@@ -91,7 +91,14 @@ export default function IndexPage() {
 
   return (
     <Container className={classes.wrapper}>
-      <Paper withBorder shadow='sm' style={{ padding: 20 }}>
+      <Paper withBorder shadow='sm' style={{ padding: 20 }} ta="center" fw={500} bg="var(--mantine-color-gray-1)">
+        Download latest (0.4.0) &nbsp;:&nbsp;
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-Setup-0.4.0.exe">Windows</a>&nbsp;|&nbsp;
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-0.4.0.dmg">Intel MacOS</a>&nbsp;|&nbsp;
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-0.4.0-arm64.dmg">Apple Silicon M1 M2 M3 MacOS</a>
+      </Paper>
+
+      <Paper withBorder shadow='sm' style={{ padding: 20 }} bg="var(--mantine-color-gray-1)" mt="md">
         <Text size="md" className={classes.description}>
           An (unofficial)
         </Text>
@@ -112,20 +119,12 @@ export default function IndexPage() {
           {features}
         </SimpleGrid>
 
-        <Space h={60} />
-        <Text size="sm" className={classes.description}>
+        <Text size="sm" className={classes.description} mt="md">
           <i>* under development</i>
         </Text>
       </Paper>
-      
-      <Paper withBorder shadow='sm' style={{ padding: 20 }} mt="md" ta="center" fw={500}>
-        Download latest (0.4.0) &nbsp;:&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-Setup-0.4.0.exe">Windows</a>&nbsp;|&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-0.4.0.dmg">Intel MacOS</a>&nbsp;|&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-0.4.0-arm64.dmg">Apple Silicon M1 M2 M3 MacOS</a>
-      </Paper>
 
-      <Paper withBorder shadow='sm' style={{ padding: 20 }} mt="md">
+      <Paper withBorder shadow='sm' style={{ padding: 20 }} mt="md" bg="var(--mantine-color-gray-1)">
         <HowItWorks />
       </Paper>
     </Container>
