@@ -1,4 +1,4 @@
-import { ThemeIcon, Text, Title, Container, SimpleGrid, rem, Space, Paper } from '@mantine/core'
+import { ThemeIcon, Text, Title, Container, SimpleGrid, rem, Image, Paper } from '@mantine/core'
 import {
   IconUser,
   IconFileImport,
@@ -9,8 +9,15 @@ import {
   IconChargingPile,
 } from '@tabler/icons-react'
 import classes from './Welcome.module.css'
+import NextImage from 'next/image'
 import { IconChartBar } from '@tabler/icons-react'
 import { HowItWorks } from '../components/HowItWorks'
+import characters from '../public/screenshots/characters.png';
+import editCharacter from '../public/screenshots/editCharacter.png';
+import lorebooks from '../public/screenshots/lorebooks.png';
+import editLorebook from '../public/screenshots/editLorebook.png';
+import stories from '../public/screenshots/stories.png';
+import editStory from '../public/screenshots/editStory.png';
 
 
 export const MOCKDATA = [
@@ -126,6 +133,18 @@ export default function IndexPage() {
 
       <Paper withBorder shadow='sm' style={{ padding: 20 }} mt="md" bg="var(--mantine-color-gray-1)">
         <HowItWorks />
+      </Paper>
+
+      <Paper withBorder shadow='sm' style={{ padding: 20 }} mt="md" bg="var(--mantine-color-gray-1)">
+        <Title className={classes.title}>Screenshots</Title>
+        <SimpleGrid>
+          <Image width="500" component={NextImage} src={characters} alt="characters" fit="contain"/>
+          <Image width="500" component={NextImage} src={editCharacter} alt="editCharacter" fit="contain"/>
+          <Image width="500" component={NextImage} src={stories} alt="stories" fit="contain"/>
+          <Image width="500" component={NextImage} src={editStory} alt="editStory" fit="contain"/>
+          <Image width="500" component={NextImage} src={lorebooks} alt="lorebooks" fit="contain"/>
+          <Image width="500" component={NextImage} src={editLorebook} alt="editLorebook" fit="contain"/>
+        </SimpleGrid>
       </Paper>
     </Container>
   )
