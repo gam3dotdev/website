@@ -41,7 +41,7 @@ export const MOCKDATA = [
   },
   {
     icon: IconBook,
-    title: '* Lorebooks',
+    title: 'Lorebooks',
     description: (
       <>
         Manage and share lorebooks across characters. Import and export lorebooks to <b>.csv or .json</b>
@@ -118,9 +118,14 @@ export default function IndexPage() {
         </Text>
       </Paper>
       
-      <Space h={60} />
-      
-      <Paper withBorder shadow='sm' style={{ padding: 20 }}>
+      <Paper withBorder shadow='sm' style={{ padding: 20 }} mt="md" ta="center" fw={500}>
+        Download latest (0.4.0) &nbsp;:&nbsp;
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-Setup-0.4.0.exe">Windows</a>&nbsp;|&nbsp;
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-0.4.0.dmg">Intel MacOS</a>&nbsp;|&nbsp;
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-0.4.0-arm64.dmg">Apple Silicon M1 M2 M3 MacOS</a>
+      </Paper>
+
+      <Paper withBorder shadow='sm' style={{ padding: 20 }} mt="md">
         <HowItWorks />
       </Paper>
     </Container>
