@@ -24,12 +24,14 @@ import classes from "./Welcome.module.css";
 import NextImage from "next/image";
 import { IconChartBar } from "@tabler/icons-react";
 import { HowItWorks } from "../components/HowItWorks";
-import characters from "../public/screenshots/characters.png";
-import editCharacter from "../public/screenshots/editCharacter.png";
-import lorebooks from "../public/screenshots/lorebooks.png";
-import editLorebook from "../public/screenshots/editLorebook.png";
-import stories from "../public/screenshots/stories.png";
-import editStory from "../public/screenshots/editStory.png";
+import s1 from "../public/screenshots/1.png";
+import s2 from "../public/screenshots/2.png";
+import s3 from "../public/screenshots/3.png";
+import s4 from "../public/screenshots/4.png";
+import s5 from "../public/screenshots/5.png";
+import s6 from "../public/screenshots/6.png";
+import s7 from "../public/screenshots/7.png";
+import s8 from "../public/screenshots/8.png";
 
 export const MOCKDATA = [
   {
@@ -208,42 +210,56 @@ export default function IndexPage() {
           <Image
             width="500"
             component={NextImage}
-            src={characters}
+            src={s1}
             alt="characters"
             fit="contain"
           />
           <Image
             width="500"
             component={NextImage}
-            src={editCharacter}
+            src={s2}
             alt="editCharacter"
             fit="contain"
           />
           <Image
             width="500"
             component={NextImage}
-            src={stories}
+            src={s3}
             alt="stories"
             fit="contain"
           />
           <Image
             width="500"
             component={NextImage}
-            src={editStory}
+            src={s3}
             alt="editStory"
             fit="contain"
           />
           <Image
             width="500"
             component={NextImage}
-            src={lorebooks}
+            src={s5}
             alt="lorebooks"
             fit="contain"
           />
           <Image
             width="500"
             component={NextImage}
-            src={editLorebook}
+            src={s6}
+            alt="editLorebook"
+            fit="contain"
+          />
+          <Image
+            width="500"
+            component={NextImage}
+            src={s7}
+            alt="editLorebook"
+            fit="contain"
+          />
+          <Image
+            width="500"
+            component={NextImage}
+            src={s8}
             alt="editLorebook"
             fit="contain"
           />
