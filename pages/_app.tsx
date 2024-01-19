@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }: any) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/icon.png" />
         <script async src="https://us.umami.is/script.js" data-website-id="a376ddde-feeb-4564-a9df-53c949953c7b"></script>
       </Head>
 
