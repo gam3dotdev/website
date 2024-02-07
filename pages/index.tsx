@@ -16,13 +16,11 @@ import {
   IconBook,
   IconDatabase,
   IconPencil,
-  IconStackFront,
-  IconChargingPile,
   IconInfoCircle,
+  IconChartBubble,
 } from "@tabler/icons-react";
 import classes from "./Welcome.module.css";
 import NextImage from "next/image";
-import { IconChartBar } from "@tabler/icons-react";
 import { HowItWorks } from "../components/HowItWorks";
 import s1 from "../public/screenshots/1.png";
 import s2 from "../public/screenshots/2.png";
@@ -86,9 +84,9 @@ export const MOCKDATA = [
     ),
   },
   {
-    icon: IconChartBar,
-    title: "* Statistics",
-    description: <>Explore, analyze and compare existing chats</>,
+    icon: IconChartBubble,
+    title: "Chats",
+    description: <>Search, duplicate, rename and branch existing chats</>,
   },
 ];
 
@@ -129,16 +127,16 @@ export default function IndexPage() {
         fw={500}
         bg="var(--mantine-color-gray-1)"
       >
-        Download latest (0.6.0) &nbsp;:&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-Setup-0.6.0.exe">
+        Download latest (0.7.0) &nbsp;:&nbsp;
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-Setup-0.7.0.exe">
           Windows
         </a>
         &nbsp;|&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-0.6.0.dmg">
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-0.7.0.dmg">
           Intel MacOS
         </a>
         &nbsp;|&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-0.6.0-arm64.dmg">
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-0.7.0-arm64.dmg">
           Apple Silicon M1 M2 M3 MacOS
         </a>
       </Paper>
@@ -231,7 +229,7 @@ export default function IndexPage() {
           <Image
             width="500"
             component={NextImage}
-            src={s3}
+            src={s4}
             alt="editStory"
             fit="contain"
           />
