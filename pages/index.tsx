@@ -132,11 +132,11 @@ export default function IndexPage() {
           Windows
         </a>
         &nbsp;|&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-0.8.0.dmg">
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-0.8.0.zip">
           Intel MacOS
         </a>
         &nbsp;|&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-0.8.0-arm64.dmg">
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-0.8.0-arm64.zip">
           Apple Silicon M1 M2 M3 MacOS
         </a>
       </Paper>
