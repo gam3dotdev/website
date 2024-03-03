@@ -34,7 +34,7 @@ import s8 from "../public/screenshots/8.png";
 export const MOCKDATA = [
   {
     icon: IconUser,
-    title: "* Create characters",
+    title: "Create characters",
     description: (
       <>
         Easily create new characters from scratch by assembling from existing
@@ -128,15 +128,15 @@ export default function IndexPage() {
         bg="var(--mantine-color-gray-1)"
       >
         Download latest (0.8.0) &nbsp;:&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-Setup-0.8.0.exe">
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-Setup-0.9.0.exe">
           Windows
         </a>
         &nbsp;|&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-0.8.0-mac.zip">
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-0.9.0-mac.zip">
           Intel MacOS
         </a>
         &nbsp;|&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-0.8.0-arm64-mac.zip">
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-0.9.0-arm64-mac.zip">
           Apple Silicon M1 M2 M3 MacOS
         </a>
       </Paper>
