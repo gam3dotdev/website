@@ -127,7 +127,7 @@ export default function IndexPage() {
         fw={500}
         bg="var(--mantine-color-gray-1)"
       >
-        Download latest (0.8.0) &nbsp;:&nbsp;
+        Download latest (0.9.0) &nbsp;:&nbsp;
         <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-Setup-0.9.0.exe">
           Windows
         </a>
