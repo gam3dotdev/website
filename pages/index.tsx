@@ -127,16 +127,16 @@ export default function IndexPage() {
         fw={500}
         bg="var(--mantine-color-gray-1)"
       >
-        Download latest (0.9.0) &nbsp;:&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-Setup-0.9.0.exe">
+        Download latest (0.9.1) &nbsp;:&nbsp;
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-Setup-0.9.1.exe">
           Windows
         </a>
         &nbsp;|&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-0.9.0-mac.zip">
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-0.9.1-mac.zip">
           Intel MacOS
         </a>
         &nbsp;|&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-0.9.0-arm64-mac.zip">
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-0.9.1-arm64-mac.zip">
           Apple Silicon M1 M2 M3 MacOS
         </a>
       </Paper>
