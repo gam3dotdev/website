@@ -30,6 +30,7 @@ import s5 from "../public/screenshots/5.png";
 import s6 from "../public/screenshots/6.png";
 import s7 from "../public/screenshots/7.png";
 import s8 from "../public/screenshots/8.png";
+import s9 from "../public/screenshots/9.png";
 
 export const MOCKDATA = [
   {
@@ -258,6 +259,13 @@ export default function IndexPage() {
             width="500"
             component={NextImage}
             src={s8}
+            alt="editLorebook"
+            fit="contain"
+          />
+          <Image
+            width="500"
+            component={NextImage}
+            src={s9}
             alt="editLorebook"
             fit="contain"
           />
