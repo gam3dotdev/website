@@ -35,58 +35,48 @@ import s9 from "../public/screenshots/9.png";
 export const MOCKDATA = [
   {
     icon: IconUser,
-    title: "Create characters",
+    title: 'Create characters',
     description: (
       <>
-        Easily create new characters from scratch by assembling from existing
-        building blocks:{" "}
-        <b>personas, stories, lorebooks, model instructions and more</b>
+        Easily create new characters from scratch by assembling from existing building blocks: <b>personas, stories, lorebooks, model instructions and more</b>
       </>
     ),
   },
   {
     icon: IconPencil,
-    title: "Stories",
+    title: 'Stories',
     description: (
       <>
-        Wrap scenarios, first messages, dialogues and lorebooks into{" "}
-        <b>stories</b> and share across characters with a as few clicks as
-        possible
+        Combine scenarios, first messages, dialogues and lorebooks into <b>stories</b> and share across characters with as few clicks as possible
       </>
     ),
   },
   {
     icon: IconDatabase,
-    title: "Manage your data",
-    description: (
-      <>
-        Easily edit, duplicate and organize characters, personas, scenarios,
-        lorebooks, model instructions and more
-      </>
-    ),
+    title: 'Manage your data',
+    description: <>Easily edit, duplicate and organize characters, personas, scenarios, lorebooks, chats, model instructions and more</>,
   },
   {
     icon: IconBook,
-    title: "Lorebooks",
+    title: 'Lorebooks',
     description: (
       <>
-        Manage and share lorebooks across characters. Import and export
-        lorebooks to <b>.csv or .json</b>
+        Manage and share lorebooks across characters. Import and export lorebooks to <b>.csv or .json</b>. Supports SillyTavent/agnai and plain text formats
       </>
     ),
   },
   {
     icon: IconFileImport,
-    title: "* Import and export",
+    title: 'Model instructions',
     description: (
       <>
-        Import and export characters to <i>.png</i> card format
+        Bootstrap your character cards by using a curated library of <b>model instructions</b>
       </>
     ),
   },
   {
     icon: IconChartBubble,
-    title: "Chats",
+    title: 'Chats',
     description: <>Search, duplicate, rename and branch existing chats</>,
   },
 ];
@@ -128,16 +118,16 @@ export default function IndexPage() {
         fw={500}
         bg="var(--mantine-color-gray-1)"
       >
-        Download latest (1.2.0) &nbsp;:&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-Setup-1.2.0.exe">
+        Download latest (1.2.1) &nbsp;:&nbsp;
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-Setup-1.2.1.exe">
           Windows
         </a>
         &nbsp;|&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-1.2.0-mac.zip">
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-1.2.1-mac.zip">
           Intel MacOS
         </a>
         &nbsp;|&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-1.2.0-arm64-mac.zip">
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-1.2.1-arm64-mac.zip">
           Apple Silicon M1 M2 M3 MacOS
         </a>
       </Paper>
