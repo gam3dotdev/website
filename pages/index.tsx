@@ -35,48 +35,60 @@ import s9 from "../public/screenshots/9.png";
 export const MOCKDATA = [
   {
     icon: IconUser,
-    title: 'Create characters',
+    title: "Create characters",
     description: (
       <>
-        Easily create new characters from scratch by assembling from existing building blocks: <b>personas, stories, lorebooks, model instructions and more</b>
+        Easily create new characters from scratch by assembling from existing
+        building blocks:{" "}
+        <b>personas, stories, lorebooks, model instructions and more</b>
       </>
     ),
   },
   {
     icon: IconPencil,
-    title: 'Stories',
+    title: "Stories",
     description: (
       <>
-        Combine scenarios, first messages, dialogues and lorebooks into <b>stories</b> and share across characters with as few clicks as possible
+        Combine scenarios, first messages, dialogues and lorebooks into{" "}
+        <b>stories</b> and share across characters with as few clicks as
+        possible
       </>
     ),
   },
   {
     icon: IconDatabase,
-    title: 'Manage your data',
-    description: <>Easily edit, duplicate and organize characters, personas, scenarios, lorebooks, chats, model instructions and more</>,
+    title: "Manage your data",
+    description: (
+      <>
+        Easily edit, duplicate and organize characters, personas, scenarios,
+        lorebooks, chats, model instructions and more
+      </>
+    ),
   },
   {
     icon: IconBook,
-    title: 'Lorebooks',
+    title: "Lorebooks",
     description: (
       <>
-        Manage and share lorebooks across characters. Import and export lorebooks to <b>.csv or .json</b>. Supports SillyTavent/agnai and plain text formats
+        Manage and share lorebooks across characters. Import and export
+        lorebooks to <b>.csv or .json</b>. Supports SillyTavent/agnai and plain
+        text formats
       </>
     ),
   },
   {
     icon: IconFileImport,
-    title: 'Model instructions',
+    title: "Model instructions",
     description: (
       <>
-        Bootstrap your character cards by using a curated library of <b>model instructions</b>
+        Bootstrap your character cards by using a curated library of{" "}
+        <b>model instructions</b>
       </>
     ),
   },
   {
     icon: IconChartBubble,
-    title: 'Chats',
+    title: "Chats",
     description: <>Search, duplicate, rename and branch existing chats</>,
   },
 ];
@@ -119,15 +131,15 @@ export default function IndexPage() {
         bg="var(--mantine-color-gray-1)"
       >
         Download latest (1.2.1) &nbsp;:&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-Setup-1.2.1.exe">
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Doghouse-Setup-1.3.0.exe">
           Windows
         </a>
         &nbsp;|&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-1.2.1-mac.zip">
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Doghouse-1.3.0-mac.zip">
           Intel MacOS
         </a>
         &nbsp;|&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Charaday-1.2.1-arm64-mac.zip">
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Doghouse1.3.0-arm64-mac.zip">
           Apple Silicon M1 M2 M3 MacOS
         </a>
       </Paper>
@@ -157,9 +169,9 @@ export default function IndexPage() {
             title="Disclaimer"
             icon={<IconInfoCircle />}
           >
-            Charaday attaches and operates directly on Faraday database. It's
+            Doghouse attaches and operates directly on Faraday database. It's
             unlikely to cause any problems, but if you are paranoid - please
-            make a backup of your Faraday database before using Charaday.
+            make a backup of your Faraday database before using Doghouse.
           </Alert>
         </Container>
 
