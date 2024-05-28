@@ -3,12 +3,13 @@ import Head from "next/head";
 import { AppShell, Group, MantineProvider } from "@mantine/core";
 import { theme } from "../theme";
 import {
-  IconLetterC,
   IconLetterH,
-  IconLetterA,
-  IconLetterR,
   IconLetterD,
-  IconLetterY,
+  IconLetterE,
+  IconLetterG,
+  IconLetterO,
+  IconLetterS,
+  IconLetterU,
 } from "@tabler/icons-react";
 import classes from "./app.module.css";
 
@@ -32,14 +33,14 @@ export default function App({ Component, pageProps }: any) {
       <AppShell header={{ height: 60 }} padding="md">
         <AppShell.Header className={classes.background}>
           <Group h="100%" px="md" justify={"center"}>
-            <IconLetterC />
-            <IconLetterH />
-            <IconLetterA />
-            <IconLetterR />
-            <IconLetterA />
             <IconLetterD />
-            <IconLetterA />
-            <IconLetterY />
+            <IconLetterO />
+            <IconLetterG />
+            <IconLetterH />
+            <IconLetterO />
+            <IconLetterU />
+            <IconLetterS />
+            <IconLetterE />
           </Group>
         </AppShell.Header>
         <AppShell.Main>

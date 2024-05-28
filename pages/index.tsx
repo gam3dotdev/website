@@ -130,7 +130,7 @@ export default function IndexPage() {
         fw={500}
         bg="var(--mantine-color-gray-1)"
       >
-        Download latest (1.2.1) &nbsp;:&nbsp;
+        Download latest (1.3.0) &nbsp;:&nbsp;
         <a href="https://github.com/gam3dotdev/website/releases/latest/download/Doghouse-Setup-1.3.0.exe">
           Windows
         </a>
@@ -154,7 +154,7 @@ export default function IndexPage() {
         <Text size="md" className={classes.description}>
           An (unofficial)
         </Text>
-        <Title className={classes.title}>Faraday companion app</Title>
+        <Title className={classes.title}>Doghouse companion app</Title>
 
         <Container size={560} p={0}>
           <Text size="md" className={classes.description}>
@@ -169,9 +169,9 @@ export default function IndexPage() {
             title="Disclaimer"
             icon={<IconInfoCircle />}
           >
-            Doghouse attaches and operates directly on Faraday database. It's
+            Doghouse attaches and operates directly on Doghouse database. It's
             unlikely to cause any problems, but if you are paranoid - please
-            make a backup of your Faraday database before using Doghouse.
+            make a backup of your Doghouse database before using Doghouse.
           </Alert>
         </Container>
 
