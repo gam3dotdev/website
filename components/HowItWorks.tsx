@@ -15,7 +15,7 @@ export function HowItWorks() {
             <b>Why do I need this app?</b>
           </Accordion.Control>
           <Accordion.Panel>
-            This app is a convenience to make editing Doghouse characters
+            This app is a convenience to make editing Backyard characters
             easier. For example, if you have characters <i>Bob</i> and{" "}
             <i>Alice</i>, both using the same scenario (or first message,
             lorebook, etc) - you can edit that scenario once and both <i>Bob</i>{" "}
@@ -25,7 +25,7 @@ export function HowItWorks() {
 
         <Accordion.Item className={classes.item} value="2">
           <Accordion.Control>
-            <b>Can I use Doghouse and Doghouse at the same time?</b>
+            <b>Can I use Backyard and Doghouse at the same time?</b>
           </Accordion.Control>
           <Accordion.Panel>
             Preferably not. Close one, open the other, and vice versa.
@@ -37,7 +37,7 @@ export function HowItWorks() {
             <b>So where is all this data coming from?</b>
           </Accordion.Control>
           <Accordion.Panel>
-            All the information is loaded directly from the local Doghouse
+            All the information is loaded directly from the local Backyard
             database
           </Accordion.Panel>
         </Accordion.Item>
@@ -66,7 +66,7 @@ export function HowItWorks() {
             <b>Does Doghouse store any data locally on its own?</b>
           </Accordion.Control>
           <Accordion.Panel>
-            No, Doghouse is not storing data, it uses Doghouse database as the
+            No, Doghouse is not storing data, it uses Backyard database as the
             source of truth
           </Accordion.Panel>
         </Accordion.Item>
@@ -78,7 +78,7 @@ export function HowItWorks() {
             </b>
           </Accordion.Control>
           <Accordion.Panel>
-            Everything is saved back to Doghouse database
+            Everything is saved back to the Backyard database
           </Accordion.Panel>
         </Accordion.Item>
 
