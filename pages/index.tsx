@@ -154,7 +154,7 @@ export default function IndexPage() {
         <Text size="md" className={classes.description}>
           An (unofficial)
         </Text>
-        <Title className={classes.title}>Doghouse companion app</Title>
+        <Title className={classes.title}>Backyard companion app</Title>
 
         <Container size={560} p={0}>
           <Text size="md" className={classes.description}>
@@ -169,9 +169,9 @@ export default function IndexPage() {
             title="Disclaimer"
             icon={<IconInfoCircle />}
           >
-            Doghouse attaches and operates directly on Doghouse database. It's
+            Doghouse attaches and operates directly on Backyard database. It's
             unlikely to cause any problems, but if you are paranoid - please
-            make a backup of your Doghouse database before using Doghouse.
+            make a backup of your Backyard database before using Doghouse.
           </Alert>
         </Container>
 
