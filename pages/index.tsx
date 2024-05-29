@@ -1,25 +1,24 @@
 /* eslint-disable react/no-unescaped-entities */
 import {
-  ThemeIcon,
-  Text,
-  Title,
+  Alert,
   Container,
-  SimpleGrid,
-  rem,
   Image,
   Paper,
-  Alert,
+  SimpleGrid,
+  Text,
+  ThemeIcon,
+  Title,
+  rem,
 } from "@mantine/core";
 import {
-  IconUser,
-  IconFileImport,
   IconBook,
-  IconDatabase,
-  IconPencil,
-  IconInfoCircle,
   IconChartBubble,
+  IconDatabase,
+  IconFileImport,
+  IconInfoCircle,
+  IconPencil,
+  IconUser,
 } from "@tabler/icons-react";
-import classes from "./Welcome.module.css";
 import NextImage from "next/image";
 import { HowItWorks } from "../components/HowItWorks";
 import s1 from "../public/screenshots/1.png";
@@ -31,6 +30,7 @@ import s6 from "../public/screenshots/6.png";
 import s7 from "../public/screenshots/7.png";
 import s8 from "../public/screenshots/8.png";
 import s9 from "../public/screenshots/9.png";
+import classes from "./Welcome.module.css";
 
 export const MOCKDATA = [
   {
@@ -130,16 +130,16 @@ export default function IndexPage() {
         fw={500}
         bg="var(--mantine-color-gray-1)"
       >
-        Download latest (1.3.0) &nbsp;:&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Doghouse-Setup-1.3.0.exe">
+        Download latest (1.3.1) &nbsp;:&nbsp;
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Doghouse-Setup-1.3.1.exe">
           Windows
         </a>
         &nbsp;|&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Doghouse-1.3.0-mac.zip">
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Doghouse-1.3.1-mac.zip">
           Intel MacOS
         </a>
         &nbsp;|&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Doghouse1.3.0-arm64-mac.zip">
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Doghouse1.3.1-arm64-mac.zip">
           Apple Silicon M1 M2 M3 MacOS
         </a>
       </Paper>
