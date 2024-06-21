@@ -130,16 +130,16 @@ export default function IndexPage() {
         fw={500}
         bg="var(--mantine-color-gray-1)"
       >
-        Download latest (1.3.1) &nbsp;:&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Doghouse-Setup-1.3.1.exe">
+        Download latest (1.4.0) &nbsp;:&nbsp;
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Doghouse-Setup-1.4.0.exe">
           Windows
         </a>
         &nbsp;|&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Doghouse-1.3.1-mac.zip">
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Doghouse-1.4.0-mac.zip">
           Intel MacOS
         </a>
         &nbsp;|&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Doghouse1.3.1-arm64-mac.zip">
+        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Doghouse1.4.0-arm64-mac.zip">
           Apple Silicon M1 M2 M3 MacOS
         </a>
       </Paper>
