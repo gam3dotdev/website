@@ -1,278 +1,147 @@
 /* eslint-disable react/no-unescaped-entities */
 import {
   Alert,
+  Center,
   Container,
-  Image,
+  Divider,
+  Group,
   Paper,
-  SimpleGrid,
   Text,
-  ThemeIcon,
   Title,
-  rem,
 } from "@mantine/core";
-import {
-  IconBook,
-  IconChartBubble,
-  IconDatabase,
-  IconFileImport,
-  IconInfoCircle,
-  IconPencil,
-  IconUser,
-} from "@tabler/icons-react";
-import NextImage from "next/image";
-import { HowItWorks } from "../components/HowItWorks";
-import s1 from "../public/screenshots/1.png";
-import s2 from "../public/screenshots/2.png";
-import s3 from "../public/screenshots/3.png";
-import s4 from "../public/screenshots/4.png";
-import s5 from "../public/screenshots/5.png";
-import s6 from "../public/screenshots/6.png";
-import s7 from "../public/screenshots/7.png";
-import s8 from "../public/screenshots/8.png";
-import s9 from "../public/screenshots/9.png";
-import classes from "./Welcome.module.css";
-
-export const MOCKDATA = [
-  {
-    icon: IconUser,
-    title: "Create characters",
-    description: (
-      <>
-        Easily create new characters from scratch by assembling from existing
-        building blocks:{" "}
-        <b>personas, stories, lorebooks, model instructions and more</b>
-      </>
-    ),
-  },
-  {
-    icon: IconPencil,
-    title: "Stories",
-    description: (
-      <>
-        Combine scenarios, first messages, dialogues and lorebooks into{" "}
-        <b>stories</b> and share across characters with as few clicks as
-        possible
-      </>
-    ),
-  },
-  {
-    icon: IconDatabase,
-    title: "Manage your data",
-    description: (
-      <>
-        Easily edit, duplicate and organize characters, personas, scenarios,
-        lorebooks, chats, model instructions and more
-      </>
-    ),
-  },
-  {
-    icon: IconBook,
-    title: "Lorebooks",
-    description: (
-      <>
-        Manage and share lorebooks across characters. Import and export
-        lorebooks to <b>.csv or .json</b>. Supports SillyTavent/agnai and plain
-        text formats
-      </>
-    ),
-  },
-  {
-    icon: IconFileImport,
-    title: "Model instructions",
-    description: (
-      <>
-        Bootstrap your character cards by using a curated library of{" "}
-        <b>model instructions</b>
-      </>
-    ),
-  },
-  {
-    icon: IconChartBubble,
-    title: "Chats",
-    description: <>Search, duplicate, rename and branch existing chats</>,
-  },
-];
-
-interface ItemProps {
-  icon: React.FC<any>;
-  title: React.ReactNode;
-  description: React.ReactNode;
-}
-
-export function Item({ icon: Icon, title, description }: ItemProps) {
-  return (
-    <div>
-      <ThemeIcon variant="light" size={40} radius={40}>
-        <Icon style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
-      </ThemeIcon>
-      <Title order={4} mt="lg">
-        {title}
-      </Title>
-      <Text size="sm" c="dimmed" lh={1.6}>
-        {description}
-      </Text>
-    </div>
-  );
-}
+import { IconCheckbox, IconInfoCircle, IconSquare } from "@tabler/icons-react";
+import Link from "next/link";
+import classes from "./app.module.css";
 
 export default function IndexPage() {
-  const features = MOCKDATA.map((feature, index) => (
-    <Item {...feature} key={index} />
-  ));
-
   return (
-    <Container className={classes.wrapper}>
-      <Paper
-        withBorder
-        shadow="sm"
-        style={{ padding: 20 }}
-        ta="center"
-        fw={500}
-        bg="var(--mantine-color-gray-1)"
-      >
-        Download latest (1.4.0) &nbsp;:&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Doghouse-Setup-1.4.0.exe">
-          Windows
-        </a>
-        &nbsp;|&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Doghouse-1.4.0-mac.zip">
-          Intel MacOS
-        </a>
-        &nbsp;|&nbsp;
-        <a href="https://github.com/gam3dotdev/website/releases/latest/download/Doghouse1.4.0-arm64-mac.zip">
-          Apple Silicon M1 M2 M3 MacOS
-        </a>
-      </Paper>
-
-      <Paper
-        withBorder
-        shadow="sm"
-        style={{ padding: 20 }}
-        bg="var(--mantine-color-gray-1)"
-        mt="md"
-      >
-        <Text size="md" className={classes.description}>
-          An (unofficial)
-        </Text>
-        <Title className={classes.title}>Backyard companion app</Title>
-
-        <Container size={560} p={0}>
-          <Text size="md" className={classes.description}>
-            Seamlessly manage characters, scenarios, and more.
-          </Text>
-        </Container>
-
-        <Container size={560} mt="lg">
-          <Alert
-            variant="light"
-            color="orange"
-            title="Disclaimer"
-            icon={<IconInfoCircle />}
-          >
-            Doghouse attaches and operates directly on Backyard database. It's
-            unlikely to cause any problems, but if you are paranoid - please
-            make a backup of your Backyard database before using Doghouse.
-          </Alert>
-        </Container>
-
-        <SimpleGrid
-          mt={60}
-          cols={{ base: 1, sm: 2, md: 3 }}
-          spacing={{ base: "xl", md: 50 }}
-          verticalSpacing={{ base: "xl", md: 50 }}
+    <Container>
+      <Container mt="lg">
+        <Alert
+          variant="light"
+          color="orange"
+          title="Doghouse, where did you go?"
+          icon={<IconInfoCircle />}
         >
-          {features}
-        </SimpleGrid>
+          Looking for Doghouse? It's no longer maintained, but it was fun. Old
+          website is still <Link href="/doghouse">here</Link> though.
+        </Alert>
 
-        <Text size="sm" className={classes.description} mt="md">
-          <i>* under development</i>
-        </Text>
-      </Paper>
+        <Paper
+          withBorder
+          shadow="sm"
+          style={{ padding: 20 }}
+          bg="var(--mantine-color-gray-1)"
+          mt="md"
+        >
+          <Title className={classes.title}>What's next?</Title>
+          <Divider mt="20" mb="20" />
+          <Text>
+            <b>&gt; Pause. Think. What do I want from (e)RP?</b>
+          </Text>
+          <Text fs="italic">
+            - Persistent worlds. Encounters. Stories. Characters that can
+            remember
+          </Text>
+          <Text fs="italic">
+            - (e)RP with multiple characters, add and remove characters as the
+            story unfolds
+          </Text>
+          <Text fs="italic">
+            - Easily mix and match characters/users personas, scenarios, lore
+          </Text>
+          <Text fs="italic">
+            - No databases and such, just plain text files, (well maybe JSON).
+          </Text>
+        </Paper>
 
-      <Paper
-        withBorder
-        shadow="sm"
-        style={{ padding: 20 }}
-        mt="md"
-        bg="var(--mantine-color-gray-1)"
-      >
-        <HowItWorks />
-      </Paper>
+        <Paper
+          withBorder
+          shadow="sm"
+          style={{ padding: 20 }}
+          bg="var(--mantine-color-gray-1)"
+          mt="md"
+        >
+          <Title className={classes.title}>How's it going so far?</Title>
 
-      <Paper
-        withBorder
-        shadow="sm"
-        style={{ padding: 20 }}
-        mt="md"
-        bg="var(--mantine-color-gray-1)"
-      >
-        <Title className={classes.title}>Screenshots</Title>
-        <SimpleGrid>
-          <Image
-            width="500"
-            component={NextImage}
-            src={s1}
-            alt="characters"
-            fit="contain"
-          />
-          <Image
-            width="500"
-            component={NextImage}
-            src={s2}
-            alt="editCharacter"
-            fit="contain"
-          />
-          <Image
-            width="500"
-            component={NextImage}
-            src={s3}
-            alt="stories"
-            fit="contain"
-          />
-          <Image
-            width="500"
-            component={NextImage}
-            src={s4}
-            alt="editStory"
-            fit="contain"
-          />
-          <Image
-            width="500"
-            component={NextImage}
-            src={s5}
-            alt="lorebooks"
-            fit="contain"
-          />
-          <Image
-            width="500"
-            component={NextImage}
-            src={s6}
-            alt="editLorebook"
-            fit="contain"
-          />
-          <Image
-            width="500"
-            component={NextImage}
-            src={s7}
-            alt="editLorebook"
-            fit="contain"
-          />
-          <Image
-            width="500"
-            component={NextImage}
-            src={s8}
-            alt="editLorebook"
-            fit="contain"
-          />
-          <Image
-            width="500"
-            component={NextImage}
-            src={s9}
-            alt="editLorebook"
-            fit="contain"
-          />
-        </SimpleGrid>
-      </Paper>
+          <Divider mt="20" mb="20" />
+          <Group>
+            <IconCheckbox size={16} color="green" />
+            <Text>Summarize chat, save as long term memories</Text>
+          </Group>
+          <Group>
+            <IconCheckbox size={16} color="green" />
+            <Text>Append memories to the chat context</Text>
+          </Group>
+
+          <Group>
+            <IconCheckbox size={16} color="green" />
+            <Text>Or use memory entries dynamically (RAG style) </Text>
+          </Group>
+
+          <Group>
+            <IconCheckbox size={16} color="green" />
+            <Text>Suggest user's input (Impersonate) </Text>
+          </Group>
+
+          <Group>
+            <IconCheckbox size={16} color="green" />
+            <Text>Use Kobold as a backend</Text>
+          </Group>
+
+          <Group>
+            <IconCheckbox size={16} color="green" />
+            <Text>Save/Load/Delete chats. Edit chat messages</Text>
+          </Group>
+
+          <Group>
+            <IconCheckbox size={16} color="green" />
+            <Text>Character Library</Text>
+          </Group>
+          <Group>
+            <IconCheckbox size={16} color="green" />
+            <Text>Worlds and Encounters</Text>
+          </Group>
+          <Group>
+            <IconSquare size={16} color="green" />
+            <Text>Lorebooks</Text>
+          </Group>
+          <Group>
+            <IconSquare size={16} color="green" />
+            <Text>Add/remove/edit worlds and encounters in them</Text>
+          </Group>
+          <Group>
+            <IconSquare size={16} color="green" />
+            <Text>Add/remove/edit characters</Text>
+          </Group>
+        </Paper>
+
+        <Paper
+          withBorder
+          shadow="sm"
+          style={{ padding: 20 }}
+          bg="var(--mantine-color-gray-1)"
+          mt="md"
+        >
+          <Title className={classes.title}>Um, can I try it?</Title>
+          <Divider mt="20" mb="20" />
+          <Text>
+            Well, I have not decided yet. But I'm thinking about something along
+            the lines of:
+          </Text>
+          <Text>
+            <b>- invite only club for hardcore (e)RPers</b>
+          </Text>
+          <Text>
+            <b>- 100% private, offline only, non-commercial</b>
+          </Text>
+          <Divider mt="20" mb="20" />
+          <Text>
+            If you got this far, come chat in my{" "}
+            <Link href="https://discord.gg/8cUsxYju">Discord</Link>
+          </Text>
+        </Paper>
+      </Container>
     </Container>
   );
 }
