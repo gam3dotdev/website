@@ -138,7 +138,7 @@ export default function IndexPage() {
           <Divider mt="20" mb="20" />
           <Text>
             If you got this far, come chat in my{" "}
-            <Link href="https://discord.gg/8cUsxYju">Discord</Link>
+            <Link href="https://discord.gg/uzSX9fNa">Discord</Link>
           </Text>
         </Paper>
       </Container>
