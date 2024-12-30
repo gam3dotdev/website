@@ -22,7 +22,7 @@ export default function IndexPage() {
           title="Charaday Worlds"
           icon={<IconInfoCircle />}
         >
-          Excited to announce beta availability of <Link href="/charaday">Charaday Worlds</Link> - a new role-play AI beased app.
+          Excited to announce beta availability of <Link href="/charaday">Charaday Worlds</Link> - a new role-play AI based app.
         </Alert>
 <br/>
         <Alert
