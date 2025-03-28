@@ -1,4 +1,5 @@
-import { Container, Paper, Grid } from "@mantine/core"
+import { Container, Paper, Grid, Alert } from "@mantine/core"
+import { IconDownload } from '@tabler/icons-react'
 import Image from 'next/image'
 import s1 from "../../public/screenshots/charaday/1.png"
 import s2 from "../../public/screenshots/charaday/2.png"
@@ -20,6 +21,12 @@ import s16 from "../../public/screenshots/charaday/16.png"
 </Container>
 
 <Container>
+
+  <Alert variant="light" color="green" ta="center">
+    Download latest version <a href="https://github.com/gam3dotdev/website/releases">here</a>,
+    and join our <a href="https://discord.gg/A47GfuJXU4">Discord</a> to get started.
+  </Alert>
+
   <Grid mb="xl">
     <Grid.Col span={6}>
       <div style={{ position: 'relative', width: '100%', height: '450px' }}>
@@ -164,8 +171,7 @@ import s16 from "../../public/screenshots/charaday/16.png"
     </Grid.Col>
   </Grid>
 
-  <Paper withBorder shadow="sm" style={{ padding: 20 }} bg="var(--mantine-color-gray-1)" mt="md">
-
+<Paper withBorder shadow="sm" style={{ padding: 20 }} bg="var(--mantine-color-gray-1)" mt="md">
 
 ### What is it?
 Charaday Worlds is an AI-based, roleplay-oriented app with an emphasis on rich characters and worldbuilding. Learn more about its [features](/charaday/features).
